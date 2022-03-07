@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "507025519784",
+    "project_id": "afaq-c3592",
+    "storage_bucket": "afaq-c3592.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507025519784:android:8967ace20618e97f2a3e9d",
+        "android_client_info": {
+          "package_name": "com.tatbeqakum.Afaq2022Gp.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "507025519784-g4j7mffcbj3q0recd9cddmfuoean5tbl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApdz0kpwSn6JaV9EZ-D7OQAj0X8ZSOL8Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "507025519784-g4j7mffcbj3q0recd9cddmfuoean5tbl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "507025519784-04suha42a0fsagnk9a6q2tp2crhage0m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.ccc"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
