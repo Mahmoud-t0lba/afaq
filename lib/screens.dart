@@ -33,8 +33,8 @@ class AfaqMorshhen extends StatelessWidget {
   }
 }
 
-class AfaqAhdafElhamla extends StatelessWidget {
-  AfaqAhdafElhamla({Key? key, required this.url}) : super(key: key);
+class AfaqTargets extends StatelessWidget {
+  AfaqTargets({Key? key, required this.url}) : super(key: key);
   String url;
 
   @override

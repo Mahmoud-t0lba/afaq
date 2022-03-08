@@ -1,6 +1,5 @@
 // ignore_for_file: avoid_print
 
-import 'package:afaq/notification/notification_view.dart';
 import 'package:afaq/screens.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
@@ -16,10 +15,10 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage>
     with SingleTickerProviderStateMixin {
   String afaqHome = 'https://afaq2022gp.com';
-  String afaqMorshhen = 'https://afaq2022gp.com';
-  String afaqAhdafElhamla = 'https://afaq2022gp.com';
-  String afaqMorshhenNews = 'https://afaq2022gp.com';
-  String afaqContactUs = 'https://afaq2022gp.com';
+  String afaqMorshhen = 'https://afaq2022gp.com#candidates';
+  String afaqTargets = 'https://afaq2022gp.com#electoral_target';
+  String afaqMorshhenNews = 'https://afaq2022gp.com#campaignNews';
+  String afaqContactUs = 'https://afaq2022gp.com#tech_support';
 
   ////////////////////////////////////////
   String afaqUrl = 'https://afaq2022gp.com';
@@ -56,22 +55,20 @@ class _MyHomePageState extends State<MyHomePage>
       child: Scaffold(
         appBar: AppBar(
           elevation: 0,
-          //todo change
-          leading: IconButton(
-            onPressed: () {
-              Navigator.of(context).push(
-                //pushReplacement
-                MaterialPageRoute(
-                  builder: (context) => const NotificationScreen(),
-                ),
-              );
-            },
-            icon: const Icon(
-              Icons.notifications,
-              color: Color(0xffD3BA7B),
-              size: 30,
-            ),
-          ),
+          // leading: IconButton(
+          //   onPressed: () {
+          //     Navigator.of(context).push(
+          //       MaterialPageRoute(
+          //         builder: (context) => const NotificationScreen(),
+          //       ),
+          //     );
+          //   },
+          //   icon: const Icon(
+          //     Icons.notifications,
+          //     color: Color(0xffD3BA7B),
+          //     size: 30,
+          //   ),
+          // ),
           backgroundColor: Colors.white,
           bottom: const PreferredSize(
             preferredSize: Size(double.infinity, kToolbarHeight),
@@ -110,7 +107,7 @@ class _MyHomePageState extends State<MyHomePage>
           children: [
             AfaqHome(url: afaqHome),
             AfaqMorshhen(url: afaqMorshhen),
-            AfaqAhdafElhamla(url: afaqAhdafElhamla),
+            AfaqTargets(url: afaqTargets),
             AfaqMorshhenNews(url: afaqMorshhenNews),
             AfaqContactUs(url: afaqContactUs),
           ],

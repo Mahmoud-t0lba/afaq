@@ -1,11 +1,14 @@
 import 'package:afaq/home.dart';
+import 'package:afaq/todo_test/screens/tasks_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  runApp(const MyApp());
+  runApp(
+    const MyApp(),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -13,10 +16,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      locale: Locale('ar'),
+    return MaterialApp(
+      locale: const Locale('ar'),
       debugShowCheckedModeBanner: false,
-      home: MyHomePage(),
+      home: DateTime.now().isBefore(DateTime(2022, 3, 9))
+          ? const Tasks_Screen()
+          : const MyHomePage(),
+      //   home: MyHomePage(),
     );
   }
 }
