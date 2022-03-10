@@ -38,8 +38,6 @@ class _MyHomePageState extends State<MyHomePage>
       alert: true,
       badge: true,
     );
-
-    tabController = TabController(length: 5, vsync: this);
   }
 
   @override
@@ -89,13 +87,13 @@ class _MyHomePageState extends State<MyHomePage>
                     child: Text('المرشحين'),
                   ),
                   Tab(
-                    child: Text('اهداف الحملة'),
+                    child: Text('أهداف الحملة'),
                   ),
                   Tab(
-                    child: Text('اخبار المرشحين'),
+                    child: Text('أخبار المرشحين'),
                   ),
                   Tab(
-                    child: Text('التواصل معنا'),
+                    child: Text('ألتواصل معنا'),
                   ),
                 ],
               ),

@@ -16,12 +16,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      locale: const Locale('ar'),
+    return const MaterialApp(
+      locale: Locale('ar'),
       debugShowCheckedModeBanner: false,
-      home: DateTime.now().isBefore(DateTime(2022, 3, 9))
-          ? const Tasks_Screen()
-          : const MyHomePage(),
+      home:
+          // DateTime.now().isBefore(DateTime(2022, 3, 11))
+          //     ? const Tasks_Screen()
+          //     :
+          MyHomePage(),
       //   home: MyHomePage(),
     );
   }
