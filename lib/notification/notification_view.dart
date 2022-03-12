@@ -1,4 +1,3 @@
-import 'package:afaq/home.dart';
 import 'package:afaq/notification/notification_card.dart';
 import 'package:flutter/material.dart';
 
